@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>디스크 환자가 도수치료 전에 보면 좋은 이야기</title>
+    <meta
+      name="description"
+      content="도수치료 1시간보다, 나머지 23시간이 더 중요한 이유"
+    />
+    <meta property="og:title" content="디스크 환자가 도수치료 전에 보면 좋은 이야기" />
+    <meta
+      property="og:description"
+      content="도수치료 1시간보다, 나머지 23시간이 더 중요한 이유"
+    />
+    <meta property="og:type" content="article" />
+    <style>
+      :root {
+        --text: #191f28;
+        --subtext: #4e5968;
+        --muted: #8b95a1;
+        --line: #e5e8eb;
+        --page: #ffffff;
+        --section: #f9fafb;
+        --blue: #3182f6;
+        --blue-dark: #1b64da;
+        --blue-soft: #eef6ff;
+        --green: #00a86b;
+        --green-soft: #eafaf3;
+        --yellow-soft: #fff8df;
+        --red: #f04452;
+        --red-soft: #fff1f2;
+        --radius: 24px;
+        font-family:
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--text);
+        font-size: 17px;
+        line-height: 1.75;
+        letter-spacing: 0;
+        word-break: keep-all;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid rgba(229, 232, 235, 0.8);
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: blur(20px);
+      }
+
+      .nav {
+        width: min(1120px, calc(100% - 40px));
+        height: 64px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-size: 17px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .brand-symbol {
+        display: grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        border-radius: 10px;
+        background: var(--text);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 900;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 22px;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .nav-links a {
+        color: var(--subtext);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover {
+        color: var(--blue);
+      }
+
+      main {
+        overflow: hidden;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .article {
+        width: min(760px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 88px 0 70px;
+        background:
+          linear-gradient(180deg, #f7fbff 0%, #fff 72%),
+          radial-gradient(circle at 72% 14%, rgba(49, 130, 246, 0.12), transparent 32%);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.65fr);
+        gap: 64px;
+        align-items: center;
+      }
+
+      .label {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        min-height: 51px;
+        padding: 0 18px;
+        border-radius: 999px;
+        background: var(--blue-soft);
+        color: var(--blue-dark);
+        font-size: 21px;
+        font-weight: 800;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin: 24px 0 24px;
+        font-size: clamp(46px, 7vw, 78px);
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .hero p {
+        max-width: 680px;
+        color: var(--subtext);
+        font-size: clamp(20px, 2.4vw, 25px);
+        font-weight: 650;
+        line-height: 1.58;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 36px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        border-radius: 14px;
+        background: var(--blue);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: #f2f4f6;
+        color: var(--text);
+      }
+
+      .summary-panel {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 32px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 30px 80px rgba(25, 31, 40, 0.08);
+      }
+
+      .summary-panel h2 {
+        margin-bottom: 22px;
+        font-size: 24px;
+        line-height: 1.35;
+      }
+
+      .summary-list {
+        display: grid;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .summary-list li {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 14px;
+        align-items: start;
+        padding: 16px;
+        border-radius: 18px;
+        background: #f8fafc;
+      }
+
+      .summary-list span {
+        display: grid;
+        height: 38px;
+        place-items: center;
+        border-radius: 13px;
+        background: #fff;
+        color: var(--blue);
+        font-weight: 900;
+      }
+
+      .summary-list strong {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 16px;
+        line-height: 1.35;
+      }
+
+      .summary-list p {
+        margin: 0;
+        color: var(--subtext);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .quick-stats {
+        padding: 42px 0 20px;
+      }
+
+      .quick-stats .label {
+        margin-bottom: 24px;
+      }
+
+      .section-divider {
+        width: min(1120px, calc(100% - 40px));
+        height: 1px;
+        margin: 0 auto;
+        background: var(--line);
+      }
+
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stat {
+        min-height: 158px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fff;
+      }
+
+      .stat small {
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .stat strong {
+        display: block;
+        margin-top: 18px;
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .stat p {
+        margin: 12px 0 0;
+        color: var(--subtext);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .definition-toggle {
+        margin-top: 18px;
+        border: 1px solid #d8e9ff;
+        border-radius: 22px;
+        background: #f4f9ff;
+        color: #243b53;
+      }
+
+      .definition-toggle summary {
+        cursor: pointer;
+        padding: 22px 24px;
+        color: var(--blue-dark);
+        font-size: 19px;
+        font-weight: 900;
+        list-style: none;
+      }
+
+      .definition-toggle summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .definition-toggle summary::after {
+        content: "+";
+        float: right;
+        color: var(--blue);
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      .definition-toggle[open] summary::after {
+        content: "-";
+      }
+
+      .definition-toggle p {
+        margin: 0;
+        padding: 0 24px 24px;
+        color: var(--subtext);
+        font-size: 17px;
+        font-weight: 650;
+        line-height: 1.7;
+      }
+
+      .section {
+        padding: 96px 0;
+      }
+
+      .section.soft {
+        background: var(--section);
+      }
+
+      .section-header {
+        margin-bottom: 38px;
+      }
+
+      h2 {
+        margin: 14px 0 14px;
+        font-size: clamp(34px, 5vw, 56px);
+        line-height: 1.16;
+        letter-spacing: 0;
+      }
+
+      .section-header p {
+        max-width: 720px;
+        color: var(--subtext);
+        font-size: 19px;
+        font-weight: 600;
+      }
+
+      .prose {
+        color: #333d4b;
+        font-size: 19px;
+        font-weight: 500;
+      }
+
+      .prose p {
+        margin-bottom: 22px;
+      }
+
+      .prose p.highlight {
+        display: inline-block;
+        margin: 2px -10px 26px;
+        padding: 8px 10px;
+        border-radius: 16px;
+        background: rgba(49, 130, 246, 0.14);
+      }
+
+      .insight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .insight {
+        padding: 28px;
+        border-radius: 26px;
+        background: #fff;
+        border: 1px solid var(--line);
+      }
+
+      .insight.blue {
+        background: var(--blue-soft);
+        border-color: #d8e9ff;
+      }
+
+      .insight.green {
+        background: var(--green-soft);
+        border-color: #d2f1e3;
+      }
+
+      .insight.yellow {
+        background: var(--yellow-soft);
+        border-color: #f3e8bc;
+      }
+
+      .insight h3 {
+        margin-bottom: 10px;
+        font-size: 23px;
+        line-height: 1.34;
+      }
+
+      .insight p {
+        margin: 0;
+        color: var(--subtext);
+        font-weight: 600;
+      }
+
+      .policy-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .policy-item {
+        display: grid;
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 24px;
+        padding: 26px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .policy-item:first-child {
+        border-top: 1px solid var(--line);
+      }
+
+      .policy-item .key {
+        color: var(--blue);
+        font-size: 17px;
+        font-weight: 900;
+      }
+
+      .policy-item h3 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        line-height: 1.34;
+      }
+
+      .policy-item p {
+        margin: 0;
+        color: var(--subtext);
+        font-weight: 550;
+      }
+
+      .table-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: #fff;
+      }
+
+      .table-note {
+        padding: 24px 28px;
+        border-bottom: 1px solid var(--line);
+        background: #f8fafc;
+        color: var(--subtext);
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .table-scroll {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        min-width: 760px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 22px 24px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      td {
+        color: #333d4b;
+        font-weight: 550;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .checklist {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .checklist li {
+        padding: 24px 26px;
+        border-radius: 24px;
+        background: #fff;
+        border: 1px solid var(--line);
+      }
+
+      .checklist strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 21px;
+      }
+
+      .checklist p {
+        margin: 0;
+        color: var(--subtext);
+        font-weight: 550;
+      }
+
+      .warning {
+        margin-top: 12px;
+        padding: 28px;
+        border: 1px solid #ffd5da;
+        border-radius: 26px;
+        background: var(--red-soft);
+        color: #642126;
+      }
+
+      .warning strong {
+        color: var(--red);
+        font-size: 20px;
+      }
+
+      .warning p {
+        margin: 8px 0 0;
+        font-weight: 650;
+      }
+
+      .copyright {
+        padding: 56px 0;
+        background: #fff8f2;
+        text-align: center;
+      }
+
+      .copyright-intro {
+        max-width: 860px;
+        margin: 0 auto 30px;
+        color: #6b625a;
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .copyright-box {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 30px 28px;
+        border: 1px solid #eadbd0;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.82);
+        color: #3a342f;
+      }
+
+      .copyright-box strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      .copyright-box p {
+        margin: 0;
+        color: #70675f;
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .footer {
+        padding: 46px 0 58px;
+        background: #111827;
+        color: #c9d1dc;
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      @media (max-width: 860px) {
+        body {
+          font-size: 16px;
+        }
+
+        .nav {
+          width: min(100% - 28px, 1120px);
+          height: auto;
+          min-height: 64px;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          padding: 12px 0;
+        }
+
+        .nav-links {
+          width: 100%;
+          gap: 16px;
+          padding-bottom: 4px;
+        }
+
+      .container,
+      .article {
+        width: min(100% - 28px, 1120px);
+      }
+
+        .section-divider {
+          width: min(100% - 28px, 1120px);
+        }
+
+        .hero {
+          padding: 58px 0 46px;
+        }
+
+        .hero-grid,
+        .insight-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero p {
+          font-size: 19px;
+        }
+
+        .summary-panel {
+          padding: 22px;
+          border-radius: 24px;
+        }
+
+        .stat-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .section {
+          padding: 70px 0;
+        }
+
+        .policy-item {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .stat-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav" aria-label="페이지 이동">
+        <a class="brand" href="#top">
+          <span class="brand-symbol">D</span>
+          <span>Disker</span>
+        </a>
+        <div class="nav-links">
+          <a href="#thought">20년디스크고인물</a>
+          <a href="#check">도수치료체크포인트</a>
+          <a href="#policy">26년7월변화</a>
+          <a href="#insurance">실손보험</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="label">7월부터 바뀌는 도수치료</span>
+            <h1>디스크 환자가 도수치료 전에 보면 좋은 이야기</h1>
+            <p>
+              도수치료 1시간보다, 나머지 23시간이 더 중요한 이유
+            </p>
+          </div>
+
+          <aside class="summary-panel" aria-label="페이지 핵심 요약">
+            <h2>이 자료에 포함된 내용</h2>
+            <ul class="summary-list">
+              <li>
+                <span>1</span>
+                <div>
+                  <strong>20년 디스크 고인물</strong>
+                  <p>일상의 23시간이 중요한 이유</p>
+                </div>
+              </li>
+              <li>
+                <span>2</span>
+                <div>
+                  <strong>도수치료 받을때 체크포인트</strong>
+                  <p>치료 전후로 놓치면 안 되는 몸의 반응들</p>
+                </div>
+              </li>
+              <li>
+                <span>3</span>
+                <div>
+                  <strong>2026년 7월부터 바뀌는 기준</strong>
+                  <p>가격, 횟수, 선행 치료 조건과 실손보험까지</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="thought">
+        <article class="article">
+          <div class="section-header">
+            <span class="label">디스크 20년 고인물</span>
+          </div>
+
+          <div class="prose">
+            <p>
+              개인적으로 디스크로 심하게 고생할 때 도수치료도 꽤 많이 받았었어요.
+            </p>
+            <p>
+              도수치료를 받고서 몸이 조금 풀리는 느낌을 받은 적도 있고,
+              움직이기 힘들 정도로 굳어 있을 때는 도움이 되는 부분이 있었어요.
+            </p>
+            <p>
+              다만 돌이켜보면, 도수치료 받는 1시간이 '치료의 전부'라고 생각했던 게 큰 패착이었어요.
+            </p>
+            <p>
+              일상에서 돌아와서는 평소처럼 허리를 쓰고, 구부리는 스트레칭을 하고, 무게 치며 운동을 하고,
+              생활습관은 거의 바뀌지 않았었거든요.
+            </p>
+            <p>
+              그래서 다시 아파지면 병원 탓을 하곤 했어요.
+            </p>
+            <p class="highlight">
+              뒤늦게 깨달은 사실은, 도수치료를 받는 1시간도 중요하지만, 나머지 일상인 23시간이 훨씬 더
+              중요하다는 거예요.
+            </p>
+            <p>
+              도수치료를 받는다고 갑자기 디스크가 짠! 완치되지도 않고, 효과가 있더라도 일시적이에요.
+              디스크 회복의 진짜 '메인'은, 23시간 내 일상을 어떻게 관리하느냐에 달려 있어요.
+            </p>
+            <p>
+              일상생활에서 관리의 키는 다름 아닌 온전히 '나'한테 달려 있습니다.
+              나의 일거수일투족을 제3자의 시선으로 관찰해 보는 것으로 시작해보세요.
+              내가 평소에 허리를 어떻게 쓰고 있는지, 어떤 걸 하고 심해지는지, 어느 정도 움직임까지 괜찮은지,
+              평소에 어딘가에 힘을 주고 있는지, 호흡은 어떻게 하고 있는지 등을 살펴 보는게 정말 중요해요.
+            </p>
+            <p>
+              디스커 팔로워분들은 내 몸 상태를 이해하고, 생활습관과 움직임을 같이 조절하는 방향으로
+              내 몸을 좀 더 주도적으로 접근하면 좋겠어요.
+              그게 곧 디스크를 평생 정복할 수 있는 길이기도 하니까요 😎
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="check">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">치료 전 체크포인트</span>
+            <h2>치료 전후로 놓치면 안 되는 몸의 반응들</h2>
+            <p>
+              강한 자극이 좋은 치료는 아닙니다. 치료 중 몸의 반응은 바로 치료사님께 말하고,
+              증상이 달라지면 진료 방향도 다시 확인해야 합니다.
+            </p>
+          </div>
+
+          <ul class="checklist">
+            <li>
+              <strong>저림, 당김, 힘 빠짐이 새로 생기거나 심해지는지</strong>
+              <p>팔이나 다리로 뻗치는 신경 증상이 달라지면, 즉시 치료사님께 알리고 진료를 확인해보세요
+                내 몸에서 느끼는 감각들은 말하지 않으면 치료사는 알 수 없어요
+              </p>
+            </li>
+            <li>
+              <strong>급성 통증이 심한 시기인지</strong>
+              <p>통증이 발생한지 얼마 되지 않았다면 조심해야 하는 시기예요
+                움직이기 힘들 정도로 아프고, 재채기/기침만 해도 심한 통증이 있다면 받기 전에 꼭 상담하세요</p>
+            </li>
+            <li>
+              <strong>목과 허리를 강하게 꺾는 방식인지</strong>
+              <p>디스크 상태에 따라 부담이 될 수 있으므로, 진단과 치료 방식의 적합성도 확인해보세요</p>
+            </li>
+            <li>
+              <strong>치료 뒤 일상 관리 계획을 세웠나요?</strong>
+              <p>오래 앉기, 수면 자세, 이동량, 운동 강도처럼 다시 아파지는 패턴을 반드시 관찰하고 기록해서,
+                근본적인 원인을 해결해야 합니다</p>
+            </li>
+          </ul>
+
+          <div class="warning">
+            <strong>증상이 심하거나 달라졌다면</strong>
+            <p>
+              저림, 힘 빠짐, 감각 이상, 배뇨·배변 이상 같은 증상이 있다면 생활 관리보다 빠른 진료가 먼저입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <section class="quick-stats">
+        <div class="container">
+          <span class="label">2026년 7월 변화</span>
+          <div class="stat-grid">
+            <article class="stat">
+              <small>시행 예정</small>
+              <strong>26년 7월 1일</strong>
+              <p>2026년 7월 1일부터 관리급여로 전환됩니다.</p>
+            </article>
+            <article class="stat">
+              <small>30분 기준 수가</small>
+              <strong>43,850원</strong>
+              <p>전국 병원 가격이 4만원대로 표준화됩니다.</p>
+            </article>
+            <article class="stat">
+              <small>환자 부담률</small>
+              <strong>95%</strong>
+              <p>건강보험 5%, 환자 본인부담 95% 구조로 변경됩니다.</p>
+            </article>
+            <article class="stat">
+              <small>기본 이용 기준</small>
+              <strong>연 15회</strong>
+              <p>일반 기준은 주 2회, 연간 15회로 제한됩니다.</p>
+            </article>
+          </div>
+          <details class="definition-toggle">
+            <summary>관리급여란?</summary>
+            <p>
+              관리급여는 과잉 진료나 남용을 막기 위해 정부가 가격, 횟수, 조건 등을 엄격하게 관리하여
+              건강보험 혜택을 주는 것을 의미합니다.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section soft" id="policy">
+        <div class="container">
+          <div class="section-header">
+            <h2>도수치료 기준이 더 명확해집니다.</h2>
+            <p>
+              아래 내용은 2026년 6월 기준의 요약입니다. 실제 적용은 병원 안내, 고시,
+              본인 보험 약관을 함께 확인해야 합니다.
+            </p>
+          </div>
+
+          <div class="policy-list">
+            <article class="policy-item">
+              <div class="key">가격</div>
+              <div>
+                <h3>1회 30분 기준 43,850원으로 표준화</h3>
+                <p>
+                  기존에는 병원마다 가격 차이가 컸지만, 관리급여 전환 이후에는 4만원대 수가가
+                  적용됩니다.
+                </p>
+              </div>
+            </article>
+            <article class="policy-item">
+              <div class="key">부담금</div>
+              <div>
+                <h3>건강보험 5%, 환자 95% 부담 구조</h3>
+                <p>
+                  환자가 실제 병원에 내는 금액은 약 41,658원이 됩니다.
+                </p>
+              </div>
+            </article>
+            <article class="policy-item">
+              <div class="key">횟수</div>
+              <div>
+                <h3>주 2회, 연 15회</h3>
+                <p>
+                  수술이나 골절 후 관절 구축, 강직 등 재활 필요성이 인정되는 경우에는 연 24회까지
+                  가능합니다.
+                </p>
+              </div>
+            </article>
+            <article class="policy-item">
+              <div class="key">순서</div>
+              <div>
+                <h3>기본 물리치료나 단순 재활치료 이후 검토</h3>
+                <p>
+                  처음부터 바로 도수치료를 받을 수 없고, 사전 치료를 먼저 시행한 뒤 차도가 없을 때
+                  추가로 검토해야합니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="insurance">
+        <div class="container">
+          <div class="section-header">
+            <span class="label">실손보험 체크</span>
+            <h2>내 보험이 몇 세대인지 먼저 확인하세요.</h2>
+            <p>
+              관리급여 전환 이후에도 실손보험은 가입 시기, 특약, 약관, 보험사 심사 기준에 따라
+              체감 부담이 달라질 수 있습니다.
+            </p>
+          </div>
+
+          <div class="table-card">
+            <div class="table-note">
+              이해를 돕기 위한 요약입니다. 실제 청구 가능 여부는 본인 약관과 보험사 기준이 우선입니다.
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>확인할 점</th>
+                    <th>참고</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1~2세대</td>
+                    <td>기존 보장 구조와 자기부담금 적용 방식</td>
+                    <td>예전 약관일수록 보장이 단순해 보일 수 있지만, 본인 약관 기준이 우선입니다.</td>
+                  </tr>
+                  <tr>
+                    <td>3세대</td>
+                    <td>도수치료 특약 가입 여부와 비급여 자기부담률</td>
+                    <td>특약 여부에 따라 기대한 만큼 보장이 안 될 수 있습니다.</td>
+                  </tr>
+                  <tr>
+                    <td>4세대</td>
+                    <td>급여 자기부담률, 비급여 특약, 보험료 할증 구조</td>
+                    <td>도수치료 횟수가 많다면 다음 보험료까지 같이 봐야 합니다.</td>
+                  </tr>
+                  <tr>
+                    <td>5세대</td>
+                    <td>도수치료와 체외충격파 보장 제외 또는 제한 여부</td>
+                    <td>월 보험료만 보고 판단하기보다 실제 병원 이용 패턴을 같이 계산해야 합니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="copyright" aria-label="저작권 안내">
+        <div class="container">
+          <div class="copyright-box">
+            <strong>저작권자: 디스커 @disker_secret</strong>
+            <p>
+              본 자료의 저작권은 디스커에 있으며, 무단 복제·수정·재배포·상업적 이용을 금지합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          이 페이지는 진단·처방·치료를 대신하지 않습니다.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
